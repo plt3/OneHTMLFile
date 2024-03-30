@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>WeekDate</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="quiz-container">
+      <div id="popup">
+        <h1>Paused</h1>
+      </div>
+      <h1 id="date-text"></h1>
+
+      <div id="button-container">
+        <button class="choice-button" id="1">Monday</button>
+        <button class="choice-button" id="2">Tuesday</button>
+        <button class="choice-button" id="3">Wednesday</button>
+        <button class="choice-button" id="4">Thursday</button>
+        <button class="choice-button" id="5">Friday</button>
+        <button class="choice-button" id="6">Saturday</button>
+        <button class="choice-button" id="0">Sunday</button>
+      </div>
+      <div id="next-container">
+        <button class="next-button" id="next-button">Continue</button>
+      </div>
+    </div>
+
+    <p id="correct">0/0 correct</p>
+    <div id="stat-container">
+      <div class="stat-column" id="year-column">
+        <p><b>Year code:</b></p>
+        <p id="year-last">Last: -</p>
+        <p id="year-average">Avg: -</p>
+        <p id="year-best">Best: -</p>
+        <p id="year-worst">Worst: -</p>
+      </div>
+      <div class="stat-column" id="rest-column">
+        <p><b>Rest:</b></p>
+        <p id="rest-last">Last: -</p>
+        <p id="rest-average">Avg: -</p>
+        <p id="rest-best">Best: -</p>
+        <p id="rest-worst">Worst: -</p>
+      </div>
+      <div class="stat-column">
+        <p id="total-time-label"><b>Total time:</b></p>
+        <p id="total-last">Last: -</p>
+        <p id="total-average">Avg: -</p>
+        <p id="total-best">Best: -</p>
+        <p id="total-worst">Worst: -</p>
+      </div>
+    </div>
+
+    <button id="pause-button">Pause</button>
+    <button id="separate-button">Separate</button>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
