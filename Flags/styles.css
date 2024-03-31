@@ -11,8 +11,11 @@ body {
   font-family: Helvetica;
 }
 
+body {
+  height: fit-content;
+}
+
 img {
-  display: none;
   width: 100%;
 }
 
@@ -35,14 +38,47 @@ input {
   border: 1px solid #5f909c;
 }
 
+.flag-wrapper {
+  display: none;
+  width: 100%;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  container-type: inline-size;
+  margin-bottom: 5vh;
+}
+
+.flag-name {
+  position: absolute;
+  text-align: center;
+  font-size: 10cqw;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 0px 1cqw;
+}
+
+#quiz-header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  background-color: #18191a;
+  width: 100%;
+  text-align: center;
+}
+
 #quiz-container {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  width: 100%;
 }
 
 #flag-container {
-  margin: 40px 0px;
   width: min(90%, 640px);
+}
+
+#incorrect-title {
+  display: none;
+  margin-bottom: 3vh;
 }

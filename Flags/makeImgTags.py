@@ -4,16 +4,16 @@ import pycountry
 
 # Ones to do manually:
 #
-# gb-sct.png
-# gb-nir.png
 # gb-eng.png
-# xk.png
+# gb-nir.png
+# gb-sct.png
 # gb-wls.png
+# xk.png
 
 
 tagList = []
 
-for file in os.listdir("w640"):
+for file in sorted(os.listdir("w640")):
     if file.endswith(".png"):
         try:
             countryName = pycountry.countries.get(

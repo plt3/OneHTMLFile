@@ -2,9 +2,7 @@
   "compilerOptions": {
     "allowJs": true,
     "checkJs": true,
-    "lib": [
-      "es2017",
-      "dom"
-    ]
+    "noImplicitAny": false,
+    "lib": ["es2017", "dom"]
   }
 }
