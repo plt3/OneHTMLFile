@@ -82,3 +82,17 @@ input {
   display: none;
   margin-bottom: 3vh;
 }
+
+#Nepal > img {
+  width: 50%;
+}
+
+#stop-button {
+  margin-top: 3vh;
+  background-color: #616161;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  padding: 7px 16px;
+  font-size: 16px;
+}

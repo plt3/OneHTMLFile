@@ -6,8 +6,8 @@ let flagIndex = 0;
 let correctNum = 0;
 let isFirstTry = true;
 
-function focusNextFlag() {
-  if (flagIndex + 1 < flagWrappers.length) {
+function focusNextFlag(isNotLast) {
+  if (isNotLast) {
     flagWrappers[flagIndex].style.display = "none";
     flagIndex++;
     flagWrappers[flagIndex].style.display = "flex";
@@ -64,7 +64,7 @@ answerForm.addEventListener("submit", (event) => {
       flagWrappers[flagIndex].dataset.correct = "1";
     }
     isFirstTry = true;
-    focusNextFlag();
+    focusNextFlag(flagIndex + 1 < flagWrappers.length);
     updateStatsHeader(flagIndex);
   } else {
     if (inputElem.value.trim() === "") {
@@ -78,6 +78,11 @@ answerForm.addEventListener("submit", (event) => {
     updateStatsHeader(flagIndex + 1);
   }
 });
+
+document.getElementById("stop-button").onclick = (event) => {
+  focusNextFlag(false);
+  event.target.style.display = "none";
+};
 
 window.onload = () => {
   updateStatsHeader(flagIndex);
