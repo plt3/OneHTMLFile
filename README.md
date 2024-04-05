@@ -10,8 +10,8 @@ I've often found myself with a problem that could be solved by a small iOS app I
 
 NOTE: check per-directory README for more information and screenshots of each web app
 
-- `WeekDate`: quiz to practice calculating the day of the week from any given date
-- `Flags`: quiz to learn flags of all the countries of the world
+- [WeekDate](WeekDate/): quiz to practice calculating the day of the week from any given date
+- [Flags](Flags/): quiz to learn flags of all the countries of the world
 
 ## Usage:
 
